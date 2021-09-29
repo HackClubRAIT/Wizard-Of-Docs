@@ -11,9 +11,6 @@ assignees: ''
 Describe more about the issue.
 
 ### Programming language
-<!--
-Leave it unchecked Owner will mark it :)
--->
 - [ ] C
 - [ ] C++
 - [ ] Java

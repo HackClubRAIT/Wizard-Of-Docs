@@ -1,3 +1,12 @@
+---
+name: Script Addition
+about: Add a DSA doc.
+title: ''
+labels: ''
+assignees: ''
+
+---
+
 ### Description 
 Describe more about the issue.
 

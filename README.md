@@ -1,4 +1,7 @@
 # Wizard-Of-Docs
+![134015433-aec59d97-a8d7-407a-88fd-5e3edebc2b77](https://user-images.githubusercontent.com/69195262/135374166-a56824f9-0930-4346-a2f2-2410abc36180.png)
+
+
 An open source project to bring all the data structures and algorithms docs under one repository.
 
 Data Structures are the main part of many computer science algorithms as they enable the programmers to handle the data in an efficient way.

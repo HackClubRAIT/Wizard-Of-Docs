@@ -1,7 +1,8 @@
 //The problem is to sort an array consisting of 0 1 and 2
 //The O(n) O(1)-space solution is we take 3 vars
 //low,mid and high.
-//High er right e everything will be 2, Low er left e 0 and low to mid-1 e 1
+// Anything to the right of high will be 2, Left of Low will be 0
+// and from low to mid-1 will be 1
 //question: https://practice.geeksforgeeks.org/problems/sort-an-array-of-0s-1s-and-2s4231/1
 
 #include <bits/stdc++.h>

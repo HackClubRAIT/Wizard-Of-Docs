@@ -1,7 +1,7 @@
 name: New Issue
 description: Description
 title: "[Create New Issue]: "
-labels: ["Hacktoberfest21"]
+labels: ["Hacktoberfest21", "Wizard-Of-Docs"]
 body:
   - type: markdown
     attributes:

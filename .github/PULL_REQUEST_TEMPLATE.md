@@ -12,10 +12,8 @@
 <!----Please delete options that are not relevant. 
       And in order to tick the check box just but x inside them for example [x] like this----->
 
-- [ ] Code
-- [ ] Documentation (Content Creation in the form of codes or tutorials)
-- [ ] Notes (Handwritten notes, cheatsheets, presentations, mind-maps)
-- [ ] Web Dev Projects 
+- [ ] Add Documentation
+- [ ] Update Documentation
 - [ ] Others (If you choose other, Please mention changes below) 
 
 <hr>

@@ -31,6 +31,20 @@ Now, generally we would resort to the above method of implementing bubble sort. 
 
 However, if we can somehow inform our algorithm that the array is already sorted, then we wont have to traverse the remaining passes. To do this we can use a flag. Two solutions implementing this approach will be given below. This wont change the worst time complexity but the best time complexity would improve to O(N).
 
+#### ⏲️ Time Complexities:
+Best: O(N)
+<br/>
+Average: O(N^2)
+<br/>
+Worst: O(N^2)
+
+#### 👾 Space complexities:
+Best: O(1)
+<br/>
+Average: O(1)
+<br/>
+Worst: O(1)
+
 ### SOLUTION 1
 ```
 def bubbleSort(array):

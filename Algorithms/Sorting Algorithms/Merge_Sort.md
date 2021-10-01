@@ -1,26 +1,22 @@
-# ⭐ MERGE SORT
+# MERGE SORT
 
 Merge Sort is a Divide and Conquer algorithm.
-It works by splitting input array into two halves, making a recursive call and then merging the sorted subarrays. 
+It works by dividing an input array into two parts, calling itself for the two parts and then merging those two sorted arrays together.
 
 
 ## Merge Sort Algorithm
 
 ```
-MergeSort(arr[], l,  r)
-If r > l
-     1. Find the middle point to divide the array into two halves:  
-             middle m = l+ (r-l)/2
-     2. Call mergeSort for first half:   
-             Call MergeSort(arr, l, m)
-     3. Call mergeSort for second half:
-             Call MergeSort(arr, m+1, r)
-     4. Merge the two halves sorted in step 2 and 3:
-             Call merge(arr, l, m, r)
+MergeSort(arr[], left,  right)
+  If left < right
+    1 Find the middle point of the array to divide it into two equal parts. 
+    2 Call MergeSort for first part (or left side) of the array. 
+    3 Call MergeSort for second part (or right side) of the array.
+    4 Call Merge function to merge both the sorted parts of the array.
 
 ```
 
-Here, MergeSort function divides the input array into two halves, calls itself for the two halves, and then merges the two sorted halves. The merge() function is used for merging two halves of te array. The merge(arr, l, m, r) assumes that arr[l..m] and arr[m+1..r] are two sorted arrays and then merges those two sorted arrays. 
+Here, MergeSort is a function which divides an array into two equal parts then calls itself for those two parts. Those sorted parts are then merged using Merge function. If 'arr' is the array, 'm' is the middle point of an array, 's' is the starting point of an array, 'e' is the ending point of the array 'arr' in Merge(arr, m, s, e), the arrays arr[s...m] and arr[m+1...e] will be assumed sorted and the Merge function  will merge those two subarrays into one.
 
 ## Code
 
@@ -35,28 +31,32 @@ void merge(int *Arr, int start, int mid, int end) {
 	while(i <= mid && j <= end) {
 		if(Arr[i] <= Arr[j]) {
 			temp[k] = Arr[i];
-			k += 1; i += 1;
+			k++; 
+      i++;
 		}
 		else {
 			temp[k] = Arr[j];
-			k += 1; j += 1;
+			k++; 
+      j++;
 		}
 	}
 
 	// Adding left elements from first half. 
 	while(i <= mid) {
 		temp[k] = Arr[i];
-		k += 1; i += 1;
+		k++;
+    i++;
 	}
 
 	// Adding left elements from second half. 
 	while(j <= end) {
 		temp[k] = Arr[j];
-		k += 1; j += 1;
+		k++; 
+    j ++;
 	}
 
 	// Copying elements from 'temp' array to original array 'Arr'.
-	for(i = start; i <= end; i += 1) {
+	for(i = start; i <= end; i ++) {
 		Arr[i] = temp[i - start]
 	}
 }
@@ -67,6 +67,7 @@ void merge(int *Arr, int start, int mid, int end) {
 void mergeSort(int *Arr, int start, int end) {
 
 	if(start < end) {
+    // 'mid' is the middle point of the array 'Arr'.
 		int mid = (start + end) / 2;
     // Calling mergeSort for first half of the array 'Arr'.
 		mergeSort(Arr, start, mid); 
@@ -75,6 +76,7 @@ void mergeSort(int *Arr, int start, int end) {
     // Calling merge function to merge to two halves of the array Arr, i.e, Arr[start...mid] and Arr[mid+1...end].
 		merge(Arr, start, mid, end);
 	}
+
 }
 
 ```

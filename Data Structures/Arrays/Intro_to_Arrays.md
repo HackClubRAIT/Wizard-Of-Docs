@@ -1,22 +1,27 @@
-//The following content explains how *Arrays* work in C++
+# Arrays
 
-<----An array in C/C++ or be it in any programming language is
-a collection of similar data items stored at contiguous
+```
+An array in C/C++ or be it in any programming language 
+is a collection of similar data items stored at contiguous
 memory locations and elements can be accessed randomly
-using indices of an array---->
+using indices of an array
+```
 
-//Declaration of Arrays in C++
+# Declaration of Arrays in C++
 
-# 1-> Size Specification
+## 1-> Size Specification
     int arr[10]; //this is one of the ways to declare an array with size *10* in this case
     int n = 10;
     int arr[n]; // the size the arrray can be an user input as well
     
-# 2-> With values but no size
+## 2-> With values but no size
     int arr[] = {1,2,3,4,5}; //This way we can declare an array of some elements
-# 3-> With values and size as well
-    int arr2[5] = {2,3,4,5,6}; //This way we can declare an array of n elements where n = 5 in this case
-# 4-> Dynamic array allocation 
+## 3-> With values and size as well
+    int arr2[6] = {19,10,8,17,9,15}; //This way we can declare an array of n elements where n = 6 in this case
+    
+![array](https://cdn.programiz.com/sites/tutorial2program/files/cpp-array-initialization.png)
+<br></br>
+## 4-> Dynamic array allocation 
     int * arr = new int[5];//this way we can allocate dynamic contiguous memory for our array
     
     --One more way to do it is with user input size--
@@ -60,6 +65,7 @@ using indices of an array---->
 
         return 0;
     }
+    
   
 # Example2 :
 

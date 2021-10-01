@@ -46,6 +46,8 @@ body:
         - Trie
         - Segment Tree
         - Disjoint Set
+        - Data Structures
+        - Algorithms
         - Others
     validations:
       required: true

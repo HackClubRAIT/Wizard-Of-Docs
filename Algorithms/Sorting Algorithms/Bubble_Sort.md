@@ -1,4 +1,4 @@
-# BUBBLE SORT.
+# ⭐ BUBBLE SORT
 
 Bubble Sort is the simplest and most classical sorting algorithm that works by comparing and swapping the adjacent elements if they are in wrong order. While this may not be the most efficient sorting way, it is certainly easiest to understand and implement.
 

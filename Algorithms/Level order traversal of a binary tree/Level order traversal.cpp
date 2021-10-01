@@ -8,11 +8,13 @@ using namespace std;
 #define True 1
 int nextLevelExist=True;
 
+struct Node{                  // tree node
     int value;
     struct Node *left;
     struct Node *right;
 }n1,n2,n3,n4,n5,n6,n7;
 
+struct Node *createBinaryTree(){    // create a binary tree .just for example
 
 /*              n1
               /    \   
@@ -45,7 +47,9 @@ int nextLevelExist=True;
     return &n1;
 }
 
+int printLevel(struct Node *root,int levelNo){     // prints one level from left to right
     
+    if(levelNo && root){ 
         printLevel(root->left,levelNo-1);   
         printLevel(root->right,levelNo-1);
     }else if(root){
@@ -56,7 +60,9 @@ int nextLevelExist=True;
 }
 
 void printLevelOrder(struct Node *root){
+void printLevelOrder(struct Node *root){           // prints level order traversal
     int level=0;
+    while(nextLevelExist){                         // if there is no next level then break
         nextLevelExist = False;
         printLevel(root,level);
         level++;

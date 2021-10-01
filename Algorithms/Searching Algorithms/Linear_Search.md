@@ -1,34 +1,52 @@
 ## Linear Search
 
-This is the simplest method for searching. In this technique of searching, the element to be found in searching the elements to be found is searched sequentially in the list. This method can be performed on a **sorted or an unsorted list (usually arrays)**. In case of a sorted list searching starts from **0th** element and continues until the element is found from the list or the element whose value is greater than (assuming the list is sorted in ascending order), the value being searched is reached.
-As against this, searching in case of unsorted list also begins from the 0th element and continues until the element or the end of the list is reached.
+Linear search algorithm is the most simplest algorithm to do sequential search and this technique iterates over the sequence and checks one item at a time, until the desired item is found or all items have been examined. There are two types of linear search methods :
 
-### Time Complexity
+* **Unordered Linear Search**
 
-Linear search makes n/2 comparisons on an average where n is the number of elements. At the most, linear search takes n comparisons. So, overall complexity in the worst case of linear search algorithm is **O(n)**.
+* **Ordered Linear Search**
 
-### Algorithm
-* LINEAR_SEARCH(A, N, VAL)
+### Unordered Linear Search:
+Let us assume we are given an array where the order of elements is not known. That means the elements of the array are not sorted. In this case, to search for an element we have to scan the complete array and see if the element is there in the given list or not.
 
-* Step 1: [INITIALIZE] SET POS = -1
+#### Pseudocode:
 
-* Step 2: [INITIALIZE] SET I = 1
+```cpp
+int UnorderedLS(int A[], int n, int data) {
+  for(int i = 0; i < n; i++) {
+     if(A[i] == data)
+       return i;
+  }
+  return -1;
+}  
+```
+#### Time Complexity:
+O(n) in the worst case we need to scan the complete array.
+#### Space Complexity:
+O(1)
 
-* Step 3: Repeat Step 4 while I<=N
+### Ordered Linear Search:
+If the elements of the array are already sorted (i.e user inputs sorted data) then in many cases we don't have to scan the complete array to see if it the element is there in the given array or not. In the pseudocode below, you can see that, at any point if the value at A[i] is greater than the data to be searched, then we just return -1 without searching the remaining array.
 
-* Step 4: IF A[I] = VAL
- SET POS = I
- PRINT POS
- Go to Step 6
- [END OF IF]
- SET I = I + 1
- [END OF LOOP]
+#### Pseudocode:
 
-* Step 5: IF POS = -1
-PRINT " VALUE IS NOT PRESENTIN THE ARRAY "
-[END OF IF]
+```cpp
+int OrderedLS(int A[], int n, int data) {
+  for(int i = 0; i < n; i++) {
+     if(A[i] == data)
+       return i;
+     else if(A[i] > data)
+       return -1;
+  }
+  return -1;
+}  
+```
+#### Time Complexity:
+O(n) in the worst case we need to scan the complete array.
+#### Space Complexity:
+O(1)
 
-* Step 6: EXIT
+### Program 
 
 ```cpp
 #include<iostream>
@@ -37,8 +55,8 @@ using namespace std;
  
 int main()
   {
-    int a[20],n,x,i,flag=0;
-    cout<<"How many elements?";
+    int a[20],n,x,i,p=0;
+    cout<<"Enter the size of the array max[20]";
     cin>>n;
     cout<<"\nEnter elements of the array\n";
     for(i=0;i<n;++i)
@@ -49,11 +67,11 @@ int main()
       {
         if(a[i]==x)
         {
-          flag=1;
+          p=1;
           break;
         }
       }
-      if(flag)
+      if(p)
           cout<<"\nElement is found at position "<<i+1;
       else
           cout<<"\nElement not found";

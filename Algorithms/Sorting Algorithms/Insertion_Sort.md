@@ -25,52 +25,46 @@ Here is the code for Insertion Sort using C++ <br>
 <br>
 
 ```
-#include <bits/stdc++.h>
+#include <iostream.h>
 using namespace std;
 
-
-/* Function to sort an array using insertion sort */
-
-void insertionSort(int arr[], int n)
-{
-	int i, key, j;
-	for (i = 1; i < n; i++)
-	{
-		key = arr[i];
-		j = i - 1;
-
-		/* Move elements of arr[0..i-1], that are
-		greater than key, to one position ahead
-		of their current position */
-
-		while (j >= 0 && arr[j] > key)
-		{
-			arr[j + 1] = arr[j];
-			j = j - 1;
-		}
-		arr[j + 1] = key;
-	}
-}
-
-// A utility function to print an array of size n
-
-void printArray(int arr[], int n)
-{
-	int i;
-	for (i = 0; i < n; i++)
-		cout << arr[i] << " ";
-	cout << endl;
-}
-
-
-/* Driver code */
 int main()
 {
-	int arr[] = { 12, 11, 13, 5, 6 };
-	int n = sizeof(arr) / sizeof(arr[0]);
+    int n;
+    cout << "Enter the total elements" << endl;
+    cin >> n;
 
-	insertionSort(arr, n);
-	printArray(arr, n);
+    int arr[n];
+
+	// taking input
+
+    cout << "Enter the elements" << endl;
+    for (int i = 0; i < n; i++)
+    {
+        cin >> arr[i];
+    }
+
+	// sorting the array
+
+    for (int i = 1; i < n; i++)
+    {
+        int current = arr[i];
+        int j = i - 1;
+
+        while (arr[j] > current && j >= 0)
+        {
+            arr[j + 1] = arr[j];
+            j--;
+        }
+
+        arr[j + 1] = current;
+    }
+
+    cout << "The sorted array :" << endl;
+    for (int i = 0; i < n; i++)
+    {
+        cout << arr[i] << " ";
+    }
 
 	return 0;
 }

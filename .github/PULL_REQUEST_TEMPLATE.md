@@ -1,10 +1,76 @@
-## What is the change?
-Remove this line and add a description
+<hr>
 
-## Related issue?
-closes: #issue_number
+## Description 📜
 
-## Checklist:
+- Please include a summary of the change and which issue is fixed. Please also include relevant motivation and context. 
+- Fixes # <issue_number_here> 
+
+<hr>
+
+## Type of change 📝
+
+<!----Please delete options that are not relevant. 
+      And in order to tick the check box just but x inside them for example [x] like this----->
+
+- [ ] Code
+- [ ] Documentation (Content Creation in the form of codes or tutorials)
+- [ ] Notes (Handwritten notes, cheatsheets, presentations, mind-maps)
+- [ ] Web Dev Projects 
+- [ ] Others (If you choose other, Please mention changes below) 
+
+<hr>
+
+## Programming Language
+
+- [ ] C#
+- [ ] C++
+- [ ] Python
+- [ ] Java
+- [ ] Javascript
+- [ ] Others
+
+## Domain of Contribution 📊
+
+<!----Please delete options that are not relevant.
+      And in order to tick the check box just but x inside them for example [x] like this----->
+
+- [ ] Introduction
+- [ ] Data Structures
+- [ ] Algorithms
+- [ ] Competitive Programming
+- [ ] Mathematics
+- [ ] Bit Magic
+- [ ] Recursion
+- [ ] Arrays
+- [ ] Searching 
+- [ ] Sorting
+- [ ] Matrix
+- [ ] Hashing
+- [ ] String
+- [ ] Linked List
+- [ ] Stacks
+- [ ] Queue
+- [ ] Deque
+- [ ] Tree
+- [ ] Binary Search Tree
+- [ ] Heap
+- [ ] Graph
+- [ ] Greedy
+- [ ] Backtracking
+- [ ] Dynamic Programming
+- [ ] Trie
+- [ ] Segment Tree
+- [ ] Disjoint Set
+- [ ] Data Structures
+- [ ] Algorithms
+- [ ] Others
+
+<hr>
+
+## Checklist ✅
+
+<!----Please delete options that are not relevant.
+      And in order to tick the check box just but x inside them for example [x] like this----->
 Before you create this PR, confirm all the requirements listed below by checking the checkboxes `[x]`:
 
 -   [ ] I have followed the [Code of Conduct](https://github.com/HackClubRAIT/Wizard-Of-Docs/blob/ec224497bce316f7b4736a901f70688f251cca87/CODE_OF_CONDUCT.md).
@@ -14,4 +80,11 @@ Before you create this PR, confirm all the requirements listed below by checking
 -   [ ] My changes generates no new warnings.
 -   [ ] I'm Hacktoberfest'21 contributor.
 
-##  Screenshots (if any)
+<hr>
+
+<!----Please delete options that are not relevant.
+      And in order to tick the check box just but x inside them for example [x] like this----->
+
+## Screenshots / Gif (Optional) 📸
+
+<hr>

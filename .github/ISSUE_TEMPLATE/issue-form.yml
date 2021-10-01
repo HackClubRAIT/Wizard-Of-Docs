@@ -59,6 +59,17 @@ body:
       options:
         - Update Documentation
         - Add Documentation
+  - type: dropdown
+    id: langtype
+    attributes:
+      label: Programming Language
+      multiple: true
+      options:
+        - C++
+        - C
+        - Java
+        - Python
+        - Others
   - type: checkboxes
     id: terms
     attributes:

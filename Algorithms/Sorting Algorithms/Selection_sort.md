@@ -50,67 +50,40 @@ Here we can observe that for 6 elements we need 5 pass(iterations) so, for n pas
 
 **Code:** 
 
-#include<stdio.h>
+      #include<stdio.h>
+      #include<stdlib.h>
 
-#include<stdlib.h>
-
-// This is swap function for swapping the minimum element with element at MIN. void swap(int \*x,int \*y) 
-
-{ 
-
-int temp=\*x; 
-
-`    `\*x=\*y; 
-
-`    `\*y=temp; 
-
-} 
-
-void SelectionSort(int A[],int n) 
-
-{ 
-
-int i,j,k; 
-
-// i refers to index of MIN.
-
-for(i=0;i<n-1;i++) 
-
-`    `{
-
-// j is used to traverse the array
-
-/\* k is fixed at minimum element and if any element at j is minimum          then that at k only then we
-
-` `move k to j \*/
-
-for(j=k=i;j<n;j++) 
-
-`        `{
-
-if(A[j]<A[k]) k=j; 
-
-`        `}
-
-swap(&A[i],&A[k]); 
-
-`    `}
-
-} 
-
-int main() 
-
-{ 
-
-int A[]={11,13,7,12,16,9,24,5,10,3},n=10,i; 
-
-SelectionSort(A, n); for(i=0;i<10;i++) 
-
-printf("%d ",A[i]); 
-
-printf("\n"); return 0; 
-
-} 
+      // This is swap function for swapping the minimum element with element at MIN. 
+      void swap(int *x,int *y)
+      { 
+          int temp=*x; 
+          *x=*y; 
+          *y=temp; 
+      } 
+      void SelectionSort(int A[],int n)
+      { 
+          int i,j,k; 
+          // i refers to index of MIN.
+          for(i=0;i<n-1;i++) 
+          {
+             // j is used to traverse the array
+             // k is fixed at minimum element and if any element at j is minimum then that at k only then we move k to j .
+             for(j=k=i;j<n;j++) 
+             {
+                 if(A[j]<A[k]) k=j; 
+             }
+          swap(&A[i],&A[k]); 
+          }
+      } 
+      int main() 
+      { 
+      int A[]={11,13,7,12,16,9,24,5,10,3},n=10,i; 
+      SelectionSort(A, n); 
+      for(i=0;i<10;i++) 
+         printf("%d ",A[i]); 
+      printf("\n"); 
+      return 0; 
+      } 
 
 Output: 3 5 7 9 10 11 12 13 16 24 
 

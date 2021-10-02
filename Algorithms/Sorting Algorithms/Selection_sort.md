@@ -60,7 +60,7 @@ Here we can observe that for 6 elements we need 5 pass(iterations) so, for n ele
       { 
           int i,j,k; 
           // i refers to index of MIN.
-          for(i=0;i<n-1;i++) 
+          for(i=0;i<n-1;i++) // This loop is for number of passes i.e (n-1)
           {
              // j is used to traverse the array
              // k is fixed at minimum element and if any element at j is minimum then that at k only then we move k to j .
@@ -68,7 +68,7 @@ Here we can observe that for 6 elements we need 5 pass(iterations) so, for n ele
              {
                  if(A[j]<A[k]) k=j; 
              }
-          swap(&A[i],&A[k]); 
+          swap(&A[i],&A[k]); // Here we swap the minimum element with element present at location MIN.
           }
       } 
       

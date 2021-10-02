@@ -1,6 +1,7 @@
 # Backtracking with C++
 
-# Topics Covered
+## Topics Covered
+- [Introduction](#introduction)
 - [Backtracking - The Exact Working ?](#backtracking---the-exact-working-)
 - [Maze Traversal Algorithm Using Backtracking](#maze-traversal-algorithm-using-backtracking)
 - [Graph Coloring Algorithm Using Backtracking](#graph-coloring-algorithm-using-backtracking)
@@ -10,6 +11,7 @@
             - [Output](#output)
     - [Solution](#solution)
 
+# Introduction
 > Backtracking is an algorithmic technique that considers searching in every possible combination for solving a computational problem.
 
 -   It is known for solving problems recursively one step at a time and removing those solutions that do not satisfy the problem constraints at any point in time.

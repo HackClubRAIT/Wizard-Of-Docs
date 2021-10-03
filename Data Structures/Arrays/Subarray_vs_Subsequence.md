@@ -7,7 +7,9 @@ Subarrays are arrays within another array.
 It contains contiguous elements 
 Example: Let's consider an array 
 A = {1,2,3,4,5} 
-Then the subarray of given array are {}, {1}, {2}, {3}, {4}, {5}, {1,2}, {1,2,3}, {1,2,3,4}, {1,2,3,4,5}, {2,3}, {2,3,4}, {2,3,4,5}, {3,4}, {3,4,5}, {4,5}. 
+Then the subarray of given array are {}, {1}, {2}, {3}, {4}, {5}, {1,2}, 
+{1,2,3}, {1,2,3,4}, {1,2,3,4,5}, {2,3}, {2,3,4}, {2,3,4,5}, {3,4}, 
+{3,4,5}, {4,5}. 
 Number of Subarray an array of 'n' element can have (excluding empty subarray) = (n*(n+1))/2 . 
 ```
 
@@ -40,7 +42,11 @@ Need not to be contiguous.
 It contains zero or more elements without changing its order of other remaining elements.
 Example: Let's consider an array 
 A = {1,2,3,4,5}
-Then the subsequence of given array are {}, {1}, {2}, {3}, {4}, {5}, {1,2}, {1,3}, {2,3}, {1,2,3}, {1,4}, {2,4}, {1,2,4}, {3,4}, {1,3,4}, {2,3,4}, {1,2,3,4}, {1,5}, {2,5}, {1,2,5}, {3,5}, {1,3,5}, {2,3,5}, {1,2,3,5}, {4,5}, {1,4,5}, {2,4,5}, {1,2,4,5}, {3,4,5}, {1,3,4,5}, {2,3,4,5}, {1,2,3,4,5}.
+Then the subsequence of given array are {}, {1}, {2}, {3}, {4}, {5}, 
+{1,2}, {1,3}, {2,3}, {1,2,3}, {1,4}, {2,4}, {1,2,4}, {3,4}, {1,3,4}, 
+{2,3,4}, {1,2,3,4}, {1,5}, {2,5}, {1,2,5}, {3,5}, {1,3,5}, {2,3,5}, 
+{1,2,3,5}, {4,5}, {1,4,5}, {2,4,5}, {1,2,4,5}, {3,4,5}, {1,3,4,5}, 
+{2,3,4,5}, {1,2,3,4,5}.
 Number of Subsequence an array of 'n' element can have (excluding empty subsequence) = (2^n - 1).
 ```
 

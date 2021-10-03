@@ -54,8 +54,8 @@ int main() {
             if (i & (1<<j)) {
                 cout<<arr[j] <<" ";
             }
-            cout<<endl;
         }
+        cout<<endl;
     }
     return 0;
 }

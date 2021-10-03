@@ -45,6 +45,7 @@ using namespace std;
 
 int main() {
     int arr[5] = {1,2,3,4,5};
+    int n = 5;
     int noOfSubseq = pow(2, n);  //to find no of non zero subsequence i.e. (2^n-1)
     for (int i=1; i<noOfSubseq; i++) {
         for(int j=0; j<n; j++) {

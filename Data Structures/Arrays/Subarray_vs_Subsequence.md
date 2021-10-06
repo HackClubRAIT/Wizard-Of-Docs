@@ -32,7 +32,15 @@ int main() { <br>
     return 0;
 }
 ```
+### Time Complexity and Space Complexity
 
+```
+Time Complexity: O(n^3)
+where n is size of array and we have to run three for loops.
+
+Space Complexity: O(1)
+here we have to just print output without storing it.
+```
 
 ## Subsequence
 
@@ -72,6 +80,16 @@ int main() {
     }
     return 0;
 }
+```
+
+### Time Complexity and Space Complexity
+
+```
+Time Complexity: O(2^n)
+time is exponential because we have to print all possible subsequence present in array.
+
+Space Complexity: O(1)
+here we have to just print output without storing it.
 ```
 
 ```

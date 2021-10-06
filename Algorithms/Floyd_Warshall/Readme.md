@@ -28,6 +28,7 @@ When we pick vertex number k as an intermediate vertex, we already have consider
 For every pair (i, j) of source and destination vertices respectively, there are two possible cases.
 k is not an intermediate vertex in shortest path from i to j. We keep the value of dist[i][j] as it is.
 k is an intermediate vertex in shortest path from i to j. We update the value of dist[i][j] as dist[i][k] + dist[k][j].
+
 ### Program in C :
 #include<stdio.h>
 int min(int,int);

@@ -100,6 +100,9 @@ static int binarySearch(int[] arr, int target) { //Declaring the binary search f
         return 0; //when target not found return 0
     }
 ```
+
+
+### Code `C++`
 ``` c++
 #include<iostream>
 using namespace std;

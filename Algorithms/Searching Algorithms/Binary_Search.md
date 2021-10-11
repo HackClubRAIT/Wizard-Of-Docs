@@ -2,7 +2,7 @@
 
 In computer science, binary search, also known as half-interval search, logarithmic search, or binary chop, is a search algorithm that finds the position of a target value within a sorted array. Binary search compares the target value to the middle element of the array. If they are not equal, the half in which the target cannot lie is eliminated and the search continues on the remaining half, again taking the middle element to compare to the target value, and repeating this until the target value is found. If the search ends with the remaining half being empty, the target is not in the array.
 > Input must be in sorted order
-#### Example: 
+#### Example 1: 
 
 ##### Input: `[20, 30, 40, 50, 80, 90, 100], 40` 
 ###### input1: `array`
@@ -69,9 +69,47 @@ def binarySearch(arr, size, target):
           return mid
     return -1
 ```
+### `Output` 
+Target element `40` is found at `index 2`. </br>
+Output: `2`
+</br>
+#### Example 2: 
+
+##### Input: `[-21 -19 -18 1 4 6 8 9 11 18 22], -18` 
+###### input1: `array`
+###### input2: `Target`
+### Code `Java`
+```java
+static int binarySearch(int[] arr, int target) { //Declaring the binary search function 
+        int start = 0;
+        int end = arr.length - 1;
+
+        while (start <= end) {
+            // Find the index of middle element 
+            int mid = start + (end - start) / 2; 
+
+            // check if element at the mid index is greater or smaller or equal to the target element 
+            if (target > arr[mid]) { 
+                start = mid + 1;
+            } else if (target < arr[mid]) {
+                end = mid - 1;
+            } else { //the case when arr[mid]==target
+                return mid;  //ans found
+            }
+        }
+        return 0; //when target not found return 0
+    }
+```
+>Note: The while loop runs until the value of start index is less than equal to the end index. When start=end at that time mid=start=end thus arr[mid]
+>is the target. After that start>end which breaks the while loop.
+
+### `Output` 
+Target element `-18` is found at `index 2`. </br>
+Output: `2`
 
 #### ⏲️ Time Complexities:
-`O(log n)`
+ `The time complexity of the binary search algorithm is O(log n).`</br>
+ `The best-case time complexity would be O(1) when the central index would directly match the desired value.`</br>
 <br/>
 #### 👾 Space complexities:
 `O(1)`

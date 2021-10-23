@@ -2,6 +2,12 @@
 
 Knapsack problem states that you are given a bag with a finite capacity, and a set of items which carry a certain weight and a profit value.
 The goal is to maximize the profit with the constraint that the weight of the bag must not exceed the capacity of the bag. \
+There are two kinds of Knapsack problems, one that can hold fractional values, and the more popular one is 0/1 Knapsack Problem.
+
+Example of Fractional Knapsack problem:- A bag that needs to contain W kg of varied fruits such that the profit is maximised.
+Example of 0/1 Knapsack problem:- A bag that needs to contain electronic gadgets whose total weight cannot exceed W kg.
+
+We'll tackle here the more popular one, which is **0/1 Knapsack Problem**.
 
 So,
 Let's say we are given the following data. \
@@ -12,8 +18,8 @@ $K$ - Capacity of the bag.
 
 Let's denote a binary variable $x$ which denotes whether an item is included.
 
-Our goal - $ max Sigma P_i * x_i $
-Constraint - $ Sigma W_i * x_i <= K $
+**Objective Function**: $ max \sum_{i=1}^n P_i  x_i $
+Subject to **Constraint**: $ \sum_{i=1}^n W_i x_i \le K $
 
 Here I propose a solution using *Dynamic Programming*.
 

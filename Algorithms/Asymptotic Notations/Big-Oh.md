@@ -1,6 +1,6 @@
 # ⭕ Big-Oh(O)
 Big-O notation is used to define an upper bound. This means that it defines the maximum value or the upper limit of the time taken by the program to complete.
-The Big-O notation is the most commonly used notation to define an algorithms run time. 
+The Big-O notation is the most commonly used notation to define algorithms run time. 
 </br>
 ![](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTDfxCAOEiRPGw7ip5x2nCOX4GDeJ3II1LRxxMordmViO5Ae7nFwP4LJJXgQvEW9NcxGfY&usqp=CAU)
 </br>
@@ -22,4 +22,4 @@ f(N) = O(g(N)), if there exists positive constants c, N<sub>0</sub> such that _f
 
 #### 📝 Note-
 We can say that the running time of binary search is _always_  _Θ(log<sub>2​</sub>n)_. Also since *Θ* is a tight bound on the run time, unlike _O_. That means if you have 10 rupees in your pocket you can totally say that you have the amount in your pocket but not more than 10 million rupees.
-The above statement though true doesn't give precise view of money in your pocket. 
+The above statement though true doesn't give a precise view of money in your pocket. 

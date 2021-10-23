@@ -16,7 +16,7 @@ But for a very large value of *n*, *c<sub>2</sub>* can be ignored. Also since *c
 ![](https://www.google.com/url?sa=i&url=https%3A%2F%2Floveforquotes.com%2Fi%2Fheygirls-think-theta-none-0d318ff8c5d545d1a99bb8f373e21018&psig=AOvVaw3JcvICfp_xJ3aQ0iMOdPZz&ust=1634902072087000&source=images&cd=vfe&ved=0CAsQjRxqFwoTCPjg0P2y2_MCFQAAAAAdAAAAABAb)
 
 When running time is  *Θ(n)*, it implies that once *n* gets large enough, the running time is at least <i>k<sub>1</sub></i>**.** *n*  and at most  <i>k<sub>1</sub></i>**.** *n*  for some constants  <i>k<sub>1</sub></i>  and <i>k<sub>2</sub></i>. Here's how to think of  *Θ(n)*:
-![credits - khanacademy](![](https://cdn.kastatic.org/ka-perseus-images/c14a48f24cae3fd563cb3627ee2a74f56c0bcef6.png))
+![](![](https://cdn.kastatic.org/ka-perseus-images/c14a48f24cae3fd563cb3627ee2a74f56c0bcef6.png))
 We are not concerned about small values but for only values larger than *n* at the dashed line since for small values *c<sub>2</sub>*  also plays a part.
 We can literally use any function of *n* like *n<sup>2</sup>, n<b>.</b>log<sub>2</sub> n* etc. 
 #

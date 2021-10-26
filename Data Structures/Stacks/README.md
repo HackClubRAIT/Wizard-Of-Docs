@@ -1,4 +1,4 @@
-#What is a stack?
+<h1>What is stack ?</h1>
 Stack is a linear data structure that follows a particular order in which the operations are performed. The order may be LIFO ( Last In First Out) or FILO (First In Last Out). 
 Generally the following three elementary operations are performed in the stack 
 Push Adds an item in the stack. However, either it's said to be an Overflow condition, If the stack is full. 
@@ -9,7 +9,7 @@ Peek or Top Returns the top element of the stack.
 isEmpty Returns true if the stack is empty, farther false. 
 Working of Stack Data Structure 
 <br>
-#The operations work as follows 
+<h2>The operations work as follows</h2>
 1.	A pointer called TOP is used to keep track of the top element in the stack. 
 2.	When initializing the stack, we set its value to-1 so that we can check if the stack is empty by comparing TOP == -1. 
 3.	On pushing an element, we increase the value of TOP and place the new element in the position refocused to by TOP. 
@@ -17,9 +17,9 @@ Working of Stack Data Structure
 5.	Before pushing, we check if the stack is before full 
 6.	Before popping, we check if the stack is before empty 
 <br>
-#Stack Time Complexity 
+<h2>Stack Time Complexity </h2>
 For the array- based execution of a stack, the push and pop operations take constant time, i.e. O(1).
-Applications of stack 
+<h2>Applications of stack </h2>
 1.	Balancing of symbols 
 2.	Infix to Postfix/ Prefix conversion 
 3.	Redo- undo features at many places like editors, photoshop. 

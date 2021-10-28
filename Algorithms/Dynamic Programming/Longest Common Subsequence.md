@@ -2,7 +2,7 @@
 
 #### Problem Statement
 
-Given two strings `S` and `T`, find the length of the longest common subsequence (<b>LCS</b>).
+Given two strings `S` and `T`find the length of the longest common subsequence (<b>LCS</b>).
 
 #### Approach
 

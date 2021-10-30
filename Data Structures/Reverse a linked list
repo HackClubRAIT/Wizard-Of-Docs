@@ -1,0 +1,73 @@
+//code for reversing a linked list
+// returns the head of the modified linked list
+#include<iostream>
+#include<algorithm>
+using namespace std;
+
+struct SinglyLinkedListNode {
+    int data;
+    struct SinglyLinkedListNode* next;
+    SinglyLinkedListNode(int data)
+    {
+        this->data = data;
+        next = NULL;
+    }
+};
+struct LinkedList 
+{
+    SinglyLinkedListNode *head;
+    LinkedList() { head = NULL; }
+
+void reverseLinkedList()
+{
+
+   SinglyLinkedListNode*prev=NULL;
+   SinglyLinkedListNode*curr=head;
+   while(curr!=NULL)
+   {
+     SinglyLinkedListNode*n=curr->next;
+     curr->next=prev;
+     prev=curr;
+     curr=n;
+   }
+   head=prev;
+     
+   
+   
+}
+
+void displayList()
+{
+    SinglyLinkedListNode* temp=head;
+    while(temp!=null)
+    {
+       cout<<temp<<" ";
+       temp=temp->next;
+    
+    }
+}
+void push(int data)
+    {
+        SinglyLinkedListNode* temp = new Node(data);
+        temp->next = head;
+        head = temp;
+    }
+}
+int main()
+{
+
+  LinkedList l  = NULL;
+  l.push(1);
+  l.push(2);
+  l.push(3);
+  l.push(4);
+  l.push(5);
+  
+  
+  
+  l.reverse();
+  cout<<"The reversed linked list is:"<<endl;
+  l.displayList();
+  return 0;
+  
+}

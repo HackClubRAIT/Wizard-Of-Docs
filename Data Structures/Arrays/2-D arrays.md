@@ -34,8 +34,10 @@ This is return 5 by moving rowwise 0-3 an columnwise 0-3
 
 Code:
 #include <iostream>
+   
 using namespace std; 
 int main () {
+   
    // an array of 4 rows and 3 columns.
    int a[4][3] = { {0,4,5}, {1,2,3}, {2,4,9}, {3,6,8}};
  // output will be 2nd element from 3rd row                            

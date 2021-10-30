@@ -63,12 +63,12 @@ Now while filling the cell dpTable[i][j], there can be two cases
 2. str1[i] != str2[j], in this case dpTable[i][j] = Math.max(dpTable[i - 1][j], dpTable[i][j - 1])
 
 ### Case 1 : When str1[i] == str2[j]
-![When we can move to only right left]
+When we can move to only right left
 <img width="272" alt="LCS-1" src="https://user-images.githubusercontent.com/65402647/139524170-f748e398-630a-49a9-b463-53206728865c.png">
 
 
 ### Case 2 : When str1[i] != str2[j]
-![When we can move to only right left]
+When we can move to only right left
 <img width="269" alt="LCS-2" src="https://user-images.githubusercontent.com/65402647/139524182-afa5db14-805a-45aa-8291-b82b694bbe8c.png">
 
 ```java

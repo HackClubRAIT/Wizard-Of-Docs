@@ -1,4 +1,4 @@
-# Binary Search Issue ( Should Also solve Mountain Array Problem) (1)
+# Finding Peak_Element Index in a Mountain_array 
 
 ## Problem Description
 

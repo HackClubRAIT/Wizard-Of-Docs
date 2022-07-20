@@ -18,23 +18,25 @@ Basically If you imagine a Mountain 🗻, and elements to be trees we need to fi
 **Example 1:**
 
 ```markdown
-**Input**: arr = [0,1,0]
-**Output**: 1
+Input: arr = [0,1,0]
+Output: 1
 ```
+Here Value 1 is the Mountain Peak Element and its Index is 1
 
 **Example 2:**
 
 ```markdown
-**Input**: arr = [0,2,1,0]
-**Output**: 1
+Input: arr = [0,2,1,0]
+Output: 1
 ```
+Here Value 1 is the Mountain Peak Element and its Index is 1
 
 **Example 3:**
-
 ```markdown
-**Input**: arr = [0,5,10,2]
-**Output**: 2
+Input: arr = [0,5,10,2]
+Output: 2
 ```
+Here Value 1 is the Mountain Peak Element and its Index is 1
 
 ## Solution
 

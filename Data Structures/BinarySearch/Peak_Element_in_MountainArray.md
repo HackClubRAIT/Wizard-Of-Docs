@@ -1,5 +1,3 @@
-# Finding Peak_Element Index in a Mountain_array 
-
 ## Problem Description
 
 An array `arr` a **mountain** if the following properties hold:
@@ -13,30 +11,36 @@ Given a mountain array `arr`, return the index `i` such that `arr[0] < arr[1
 
 You must solve it in `O(log(arr.length))` time complexity.
 
+The Problems aks us to find out the Index of the element which has a decreasing/Increasing list of element on the left side from that element as well as Increasing / decreasing list of elements on its right side.
+
+Basically If you imagine a Mountain 🗻, and elements to be trees we need to find the element on top of the mountain where the pattern of elements changes Below are few examples 👇🏽
+
 **Example 1:**
 
-```
+```markdown
 **Input**: arr = [0,1,0]
 **Output**: 1
 ```
 
 **Example 2:**
 
-```
+```markdown
 **Input**: arr = [0,2,1,0]
 **Output**: 1
 ```
 
 **Example 3:**
 
-```
-Input: arr = [0,5,10,2]
-Output: 2
+```markdown
+**Input**: arr = [0,5,10,2]
+**Output**: 2
 ```
 
 ## Solution
 
-By using basic Principle of binary Search and making small adjustment we can solve the question  
+## With Java
+
+By using basic Principle of binary Search and making small adjustment for this question we can solve the question.
 
 ```java
 public class Mountain {
@@ -73,10 +77,7 @@ public class Mountain {
     }
 }
 ```
-
-
 ## With Python
-
 ```python
 
 def Peak_Index_In_Mountainarray(arr):

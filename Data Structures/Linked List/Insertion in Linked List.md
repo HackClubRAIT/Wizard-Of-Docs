@@ -1,3 +1,9 @@
+###There are 3 ways of inserting an element in linked list:
+🎯 Insertion at the beginning
+🎯 Insertion at the end
+🎯 Insertion at a given position
+
+##Let's start by creating a ListNode:
 ```
 #include <bits/stdc++.h>
 using namespace std;
@@ -8,6 +14,8 @@ struct ListNode{
 };
 ```
 
+##The code for inserting an element at the beginning:
+```
 struct ListNode *insertAtBeginning(struct ListNode *head, int data){
 
     struct ListNode *temp;
@@ -28,7 +36,10 @@ struct ListNode *insertAtBeginning(struct ListNode *head, int data){
 
     return head;
 }
+```
 
+##The code for inserting an element at the end:
+```
 struct ListNode *insertAtEnd(struct ListNode *head, int data){
     struct ListNode *temp, *curr;
 
@@ -50,7 +61,10 @@ struct ListNode *insertAtEnd(struct ListNode *head, int data){
 
     return head;
 }
+```
 
+##The code for inserting an element at the given position:
+```
 struct ListNode *insertAtGivenPosition(struct ListNode *head, struct ListNode *newNode, int n){
 
     struct ListNode *pred = head;
@@ -70,7 +84,10 @@ struct ListNode *insertAtGivenPosition(struct ListNode *head, struct ListNode *n
     pred -> next = newNode;
     return head;
 }
+```
 
+##Print List:
+```
 void printList(ListNode* n)
 {
     while (n != NULL) {
@@ -78,7 +95,10 @@ void printList(ListNode* n)
         n = n->next;
     }
 }
+```
 
+##MAIN()
+```
 int main()
 {
     ListNode* head = NULL;
@@ -114,3 +134,4 @@ int main()
   
     return 0;
 }
+```

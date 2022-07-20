@@ -1,9 +1,9 @@
-###There are 3 ways of inserting an element in linked list:
-🎯 Insertion at the beginning
-🎯 Insertion at the end
-🎯 Insertion at a given position
+### There are 3 ways of inserting an element in linked list: <br>
+🎯 Insertion at the beginning <br>
+🎯 Insertion at the end <br>
+🎯 Insertion at a given position <br>
 
-##Let's start by creating a ListNode:
+## Let's start by creating a ListNode:
 ```
 #include <bits/stdc++.h>
 using namespace std;
@@ -14,7 +14,10 @@ struct ListNode{
 };
 ```
 
-##The code for inserting an element at the beginning:
+## Inserting an element at the beginning: <br>
+1. We check if *head* already exists
+2. If it does, we point the new node's next to it and make the new node as the new head.
+
 ```
 struct ListNode *insertAtBeginning(struct ListNode *head, int data){
 
@@ -38,7 +41,11 @@ struct ListNode *insertAtBeginning(struct ListNode *head, int data){
 }
 ```
 
-##The code for inserting an element at the end:
+## Inserting an element at the end: <br>
+1. We traverse the list till the next pointer points to *NULL*
+2. Then point the next pointer to the new node.
+3. The new node's next pointer points to *NULL*
+
 ```
 struct ListNode *insertAtEnd(struct ListNode *head, int data){
     struct ListNode *temp, *curr;
@@ -63,7 +70,10 @@ struct ListNode *insertAtEnd(struct ListNode *head, int data){
 }
 ```
 
-##The code for inserting an element at the given position:
+## Inserting an element at the given position: <br>
+1. Run a loop to reach the given position.
+2. Point new node's next pointer to previous node's next.
+3. And make the new node as the next of previous node.
 ```
 struct ListNode *insertAtGivenPosition(struct ListNode *head, struct ListNode *newNode, int n){
 
@@ -86,7 +96,7 @@ struct ListNode *insertAtGivenPosition(struct ListNode *head, struct ListNode *n
 }
 ```
 
-##Print List:
+## Print List:
 ```
 void printList(ListNode* n)
 {
@@ -97,7 +107,7 @@ void printList(ListNode* n)
 }
 ```
 
-##MAIN()
+## *MAIN* function ():
 ```
 int main()
 {

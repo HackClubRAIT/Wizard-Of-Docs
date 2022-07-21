@@ -12,6 +12,7 @@ Before you create this PR, confirm all the requirements listed below by checking
 -   [ ] I have you tested the code before submission.
 -   [ ] I have commented my code, particularly in hard-to-understand areas.
 -   [ ] My changes generates no new warnings.
--   [ ] I'm Hacktoberfest'21 contributor.
+-   [ ] I'm Hacktoberfest'21 contributor
+-   [ ] I'm Hack-Club-Rait'22 Contributor
 
 ##  Screenshots (if any)

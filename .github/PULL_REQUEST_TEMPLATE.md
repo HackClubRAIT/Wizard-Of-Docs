@@ -13,6 +13,6 @@ Before you create this PR, confirm all the requirements listed below by checking
 -   [ ] I have commented my code, particularly in hard-to-understand areas.
 -   [ ] My changes generates no new warnings.
 -   [ ] I'm Hacktoberfest'21 contributor
--   [ ] I'm Hack-Club-Rait'22 Contributor
+-   [ ] I'm (HSOC) Hack-Club-Rait Summer of code '22 Contributor
 
 ##  Screenshots (if any)

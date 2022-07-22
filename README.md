@@ -89,3 +89,21 @@ git push -u origin <your_branch_name>
 
 
 **15** Voila! You have made a PR to the Wizard-Of-Docs. Sit back patiently and relax while your PR is reviewed.
+
+<br>
+
+# **Project Contributors** 
+
+ <a href="https://github.com/HackClubRAIT/Wizard-Of-Docs/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=HackClubRAIT/Wizard-Of-Docs" />
+</a>
+  
+<br>
+<br>
+  
+## This repository is a part of the following Open Source Program: <br>
+Hack Club RAIT
+
+
+![1632670084686](https://user-images.githubusercontent.com/80090908/179052180-5067b5fe-9c98-421e-b818-ae4bd7976ca8.jpg)
+

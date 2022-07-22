@@ -56,9 +56,10 @@ vector<int> simpleSieve(int limit) {
 }
 
 
-vector<int> segmentedSieve(int lp, int up, vector<int> initialPrimes) {
+vector<int> segmentedSieve(int lp, int up) {
     vector<int> mark(up-lp+1, true);
     vector<int> primes;
+    vector<int> initialPrimes = simpleSieve(sqrt(up));
 
     for(auto p : initialPrimes) {
         // Calculating the first multiple of the prime in this segment
@@ -74,7 +75,7 @@ vector<int> segmentedSieve(int lp, int up, vector<int> initialPrimes) {
     }
     // Collecting All Primes
     for(int i=0; i<mark.size(); i++) {
-        if(mark[i])
+        if(mark[i] && (i+lp != 0 && i+lp != 1))
             primes.push_back(i + lp);
     }
 
@@ -83,7 +84,6 @@ vector<int> segmentedSieve(int lp, int up, vector<int> initialPrimes) {
 
 int main() {
 
-    vector<int> initialPrimes;
     vector<int> primes;
     int lp = 0, up = 0;
 
@@ -93,9 +93,7 @@ int main() {
     cin >> up;
     cout << endl;
 
-    initialPrimes = simpleSieve(sqrt(up));
-
-    primes = segmentedSieve(lp, up, initialPrimes);
+    primes = segmentedSieve(lp, up);
 
     for(auto p : primes)
         cout << p << ", ";
@@ -129,11 +127,13 @@ def simpleSieve(limit : int) -> list:
     return initialPrimes
 
 
-def segmentedSieve(lp : int, up : int, intialPrimes : list) -> list:
+def segmentedSieve(lp : int, up : int) -> list:
     mark = [True] * (up - lp + 1)
     primes = list()
+    initialPrimes = simpleSieve(limit= int(up**0.5))
 
-    for p in intialPrimes:
+
+    for p in initialPrimes:
         # Finding out first multiple of the prime
         first = lp//p * p
         if first<lp:
@@ -145,20 +145,23 @@ def segmentedSieve(lp : int, up : int, intialPrimes : list) -> list:
 
     # Collecting the primes
     for i, m in enumerate(mark):
-        if m:
+        if m and (i+lp != 0 and i+lp != 1):
             primes.append(i+lp)
 
     return primes
 
-if __name__ == "__main__":
+
+def main():
     lp = int(input("Enter the lower limit: "))
     up = int(input("Enter the upper limit: "))
 
-    initialPrimes = simpleSieve(limit= int(up**0.5))
-
-    primes = segmentedSieve(lp, up, initialPrimes)
+    primes = segmentedSieve(lp, up)
 
     print(f"\nHere are the primes in range {lp}-{up}:")
     print(*primes, sep= ", ", end= "\n\n")
+
+
+if __name__ == "__main__":
+    main()
 
 ```

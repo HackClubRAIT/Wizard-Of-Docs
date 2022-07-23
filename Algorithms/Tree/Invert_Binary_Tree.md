@@ -1,6 +1,8 @@
 # Invert Binary Tree 
 
-## Problem :
+A binary tree is one in which there are a maximum of 2 children for each non-leaf node in the tree. A binary tree can be inverted by creating a new binary tree with all of the left and right nodes of all non-leaf nodes from the original binary tree switched around. The term "Mirror tree" also applies to the inverted binary tree.
+
+## Problem Statement :
 Given the root of a binary tree, invert the tree, and return its root.
 
 ### Example 1:
@@ -9,12 +11,18 @@ Input: root = [4,2,7,1,3,6,9]
 
 Output: [4,7,2,9,6,3,1]
 
+![img](https://s3.ap-south-1.amazonaws.com/afteracademy-server-uploads/invert-a-bianry-tree-input2-2bcb260fdb270621.png)
+
+
 ### Example 2:
 
 Input: root = [2,1,3]
 
 Output: [2,3,1]
-#### Constraints:
+
+![img](https://assets.leetcode.com/uploads/2021/03/14/invert2-tree.jpg)
+
+### Constraints:
 * The number of nodes in the tree is in the range [0, 100].
 * -100 <= Node.val <= 100.
 
@@ -60,6 +68,8 @@ public:
     }
 };
 ```
+## Explanation :
+The invertTree function in the above code samples first determines whether the tree is empty. If not, it switches the root's two children and then recursively swaps the two sub-trees until the root has some value. The recursive calls are terminated when the root is NULL.
 
 ## Time Complexity :
 Due to the fact that each node in the tree is only visited once, the time complexity is O(n), where n is the number of nodes in the tree. We can't do better than that since we have to visit each node to reverse it.

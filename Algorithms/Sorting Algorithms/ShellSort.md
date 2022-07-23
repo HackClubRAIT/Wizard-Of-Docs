@@ -1,6 +1,10 @@
 ## Description 
 Shell sort is a variation version of the insertion-sort algorithm. It intially sorts elements that are far apart from each other and successively reduces the interval between the elements to be sorted.
 
+Shell Sort is similar to Insertion Sort algorithm and is efficient in sorting widely placed unsorted array. Let's say, if an element in an unsorted array is much far from its sorted position, then insertion sort becomes costly as it will compare and shift one by one every element greater than it (i.e. it will take (element original position - element sorted position) number of swaps/shifts to sort that element.). See figure 1,
+
+Shell sort addresses this problem and reduces the number of shifts/swaps by dividing the array into subarrays of intervals (gap) and then applying insertion sort on the sub-arrays. This process is repeated with reducing interval (gap) size until the gap becomes 0. As a result, the number of swaps significantly reduces but at the cost of more number of comparisons.
+
 ## Code  
 ```cpp
 

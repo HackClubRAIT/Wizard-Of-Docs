@@ -1,5 +1,7 @@
 ## Description 
-Radix sort algorithm  sorts the elements by  grouping the individual digits of the same place value. Then, sort the elements according to the elements increasing/decreasing order.
+Radix sort is a sorting technique which is different from the concept of bubble sort,selection,merge ot quisk sort as radix sort is done by depending on the digits of the elements from the right most bit to the left most bit and by sorting the positional digits at 
+n<sup>th</sup> element of the array.
+Radix sort is a non-comparison based sorting algorithm.It depends on the place values of the numbers and grouped together according to the place values and thus sorting is performed.
 
 ## Code  
 ```cpp

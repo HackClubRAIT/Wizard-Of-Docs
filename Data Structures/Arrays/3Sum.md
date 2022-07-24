@@ -3,7 +3,7 @@ This problem in some ways is a continuation of the two sum problem. So, if you h
 
 Problem Link : https://leetcode.com/problems/3sum/
 
-Problem :
+### Problem :
 
 Given an integer array nums , return all the triplets [nums[i], nums[j], nums[k]] such that i != j, i != k, and j != k, and <br/> nums[i] + nums[j] + nums[k] == 0.
 
@@ -49,3 +49,5 @@ class Solution:
                         l += 1
         return res
 ```
+### Time Complexity - O(n^2)
+### Space Complexity - O(1)

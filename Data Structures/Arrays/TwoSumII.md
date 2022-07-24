@@ -42,3 +42,6 @@ class Solution:
             else:
                 return [l + 1, r + 1]
 ```
+
+### Time Complexity - O(n)
+### Space Complexity - O(1)

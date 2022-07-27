@@ -28,6 +28,18 @@ n = 9 since there are 9 numbers, so all numbers are in the range [0,9]. 8 is the
 * 0 <= nums[i] <= n
 * All the numbers of nums are unique.
 
+## Approach :
+There are n unique numbers given.
+
+These values add up to ((n * (n + 1)) / 2)
+
+which is the same as adding the first n positive natural numbers together.
+
+This is equivalent to (array sum + missing number).
+
+SUM OF THE FIRST N NUMBERS - SUM OF ARRAY = Missing number.
+
+
 ## Solution Function in Python :
 ```python
 class Solution(object):
@@ -66,14 +78,14 @@ class Solution
     public int missingNumber(int[] nums)
     {
         int n = nums.length;
-        long totalArraySum = 0;
+        long sum = 0;
         for (int i = 0 ; i < n ; i++)
         {
-            totalArraySum += nums[i];
+            sum += nums[i];
         }
         // return the difference between the sum and 
         // the total that is the missing number
-        return (int)(((n * (n + 1)) / 2) - totalArraySum);
+        return (int)(((n*(n + 1))/2) - sum);
     }
  }
 ```

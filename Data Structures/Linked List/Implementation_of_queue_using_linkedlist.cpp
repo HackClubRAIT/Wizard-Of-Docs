@@ -1,7 +1,7 @@
 #include <iostream>
 using namespace std;
 
-
+// Structure of Node.
 struct Node
 {
 int data;
@@ -12,7 +12,7 @@ Node *link;
 Node *front = NULL;
 Node *rear = NULL;
 
-
+//Function to check if queue is empty or not
 bool isempty()
 {
  if(front == NULL && rear == NULL)
@@ -21,14 +21,14 @@ bool isempty()
  return false;
 }
 
-
+//function to enter elements in queue
 void enqueue ( int value )
 {
  Node *ptr = new Node();
  ptr->data= value;
  ptr->link = NULL;
 
-
+//If inserting the first element/node
  if( front == NULL )
  {
   front = ptr;
@@ -41,7 +41,7 @@ void enqueue ( int value )
  }
 }
 
-
+//function to delete/remove element from queue
 void dequeue ( )
 {
  if( isempty() )
@@ -61,7 +61,7 @@ void dequeue ( )
  }
 }
 
-
+//function to show the element at front
 void showfront( )
 {
  if( isempty())
@@ -70,7 +70,7 @@ void showfront( )
  cout<<"element at front is:"<<front->data;
 }
 
-
+//function to display queue
 void displayQueue()
 {
  if (isempty())
@@ -86,7 +86,7 @@ void displayQueue()
  }
 }
 
-
+//main function
 int main()
 {
  int choice, flag=1, value;

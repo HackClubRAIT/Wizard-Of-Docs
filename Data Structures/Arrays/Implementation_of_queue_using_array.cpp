@@ -14,6 +14,8 @@ void Insert() {
       que[rear] = val;
    }
 }
+//In the above program, the function Insert() inserts an element into the queue. If the rear is equal to n-1, then the queue is full and overflow is displayed
+
 void Delete() {
    if (front == - 1 || front > rear) {
       cout<<"Queue Underflow ";
@@ -23,6 +25,8 @@ void Delete() {
       front++;;
    }
 }
+//In the function Delete(), if there are no elements in the queue then it is underflow condition.
+
 void Display() {
    if (front == - 1)
    cout<<"Queue is empty"<<endl;
@@ -33,6 +37,8 @@ void Display() {
          cout<<endl;
    }
 }
+//In the function display(), if front is -1 then queue is empty. Otherwise all the queue elements are displayed using a for loop. 
+
 int main() {
    int ch;
    cout<<"1) Insert element to queue"<<endl;
@@ -56,3 +62,4 @@ int main() {
    } while(ch!=4);
    return 0;
 }
+//The function main() provides a choice to the user if they want to insert, delete or display the queue.

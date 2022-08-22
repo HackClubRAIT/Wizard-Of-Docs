@@ -4,7 +4,7 @@ A queue is an abstract data structure that contains a collection of elements. Qu
 ```
 
 
-### 1-> In the above program, the function Insert() inserts an element into the queue. If rear is NULL,then the queue is empty and a single element is inserted. Otherwise, a node is inserted after rear with the required element and then that node is set to rear. This is shown below −
+### 1-> The function Insert() inserts an element into the queue. If rear is NULL,then the queue is empty and a single element is inserted. Otherwise, a node is inserted after rear with the required element and then that node is set to rear. This is shown below −
     void Insert() {
     int val;
     cout<<"Insert the element in queue : "<<endl;

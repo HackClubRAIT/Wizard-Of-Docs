@@ -5,7 +5,7 @@ A queue is an abstract data structure that contains a collection of elements. Qu
 ```
 
 
-### 1-> In the above program, the function Insert() inserts an element into the queue. If the rear is equal to n-1, then the queue is full and overflow is displayed. If front is -1, it is incremented by 1. Then rear is incremented by 1 and the element is inserted in index of rear. This is shown below −
+### 1-> The function Insert() inserts an element into the queue. If the rear is equal to n-1, then the queue is full and overflow is displayed. If front is -1, it is incremented by 1. Then rear is incremented by 1 and the element is inserted in index of rear. This is shown below −
     void Insert() {
     int val;
     if (rear == n - 1)

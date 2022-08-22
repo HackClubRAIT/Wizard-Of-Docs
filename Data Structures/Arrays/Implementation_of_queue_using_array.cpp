@@ -1,3 +1,9 @@
+#                                                        C++ Program to Implement Queue using Array
+# A queue is an abstract data structure that contains a collection of elements.
+# Queue implements the FIFO mechanism i.e. the element that is inserted first is also deleted first. 
+# In other words, the least recently added element is removed first in a queue.
+# A program that implements the queue using an array is given as follows −
+
 include <iostream>
 using namespace std;
 int que[100], n = 100, front = - 1, rear = - 1;
@@ -14,7 +20,8 @@ void Insert() {
       que[rear] = val;
    }
 }
-//In the above program, the function Insert() inserts an element into the queue. If the rear is equal to n-1, then the queue is full and overflow is displayed
+# In the above program, the function Insert() inserts an element into the queue. If the rear is equal to n-1, then the queue is full and overflow is displayed. 
+# If front is -1, it is incremented by 1. Then rear is incremented by 1 and the element is inserted in index of rear. This is shown below −
 
 void Delete() {
    if (front == - 1 || front > rear) {
@@ -25,7 +32,8 @@ void Delete() {
       front++;;
    }
 }
-//In the function Delete(), if there are no elements in the queue then it is underflow condition.
+#In the function Delete(), if there are no elements in the queue then it is underflow condition. 
+#Otherwise the element at front is displayed and front is incremented by one. This is shown below −
 
 void Display() {
    if (front == - 1)
@@ -37,7 +45,8 @@ void Display() {
          cout<<endl;
    }
 }
-//In the function display(), if front is -1 then queue is empty. Otherwise all the queue elements are displayed using a for loop. 
+# In the function display(), if front is -1 then queue is empty. 
+# Otherwise all the queue elements are displayed using a for loop. This is shown below −
 
 int main() {
    int ch;
@@ -62,4 +71,6 @@ int main() {
    } while(ch!=4);
    return 0;
 }
-//The function main() provides a choice to the user if they want to insert, delete or display the queue.
+# The function main() provides a choice to the user if they want to insert, delete or display the queue. 
+# According to the user response, the appropriate function is called using switch. 
+# If the user enters an invalid response, then that is printed. 

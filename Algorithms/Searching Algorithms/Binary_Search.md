@@ -100,6 +100,40 @@ static int binarySearch(int[] arr, int target) { //Declaring the binary search f
         return 0; //when target not found return 0
     }
 ```
+
+
+### Code `C++`
+``` c++
+#include<iostream>
+using namespace std;
+int binarySearch(int arr[],int left, int right,int x){
+	if(r>=l)
+	{
+		int mid=left+(right-left)/2;
+		if(arr[mid]==x){
+			return mid;
+		}
+		if(arr[mid]>x){
+			return binarySearch(arr, mid+1,right,x);
+		}
+		if(arr[mid]<x){
+			return binarySearch(arr,left,mid-1,x);
+		}
+	}
+	return -1;
+}
+int main(void)
+{
+	int arr[] = {1,3,5,7,8};
+	int x=5;
+	int n = sizeof(arr)/sizeof(arr[0]);
+	int result= binarySearch(arr,0,n-1,x);
+	(result == -1) ? cout << "Element is not present in array"
+				: cout << "Element is present at index " << result+1;
+	return -1;
+}
+```
+
 >Note: The while loop runs until the value of start index is less than equal to the end index. When start=end at that time mid=start=end thus arr[mid]
 >is the target. After that start>end which breaks the while loop.
 

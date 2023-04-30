@@ -114,7 +114,7 @@ def quickSort(arr, start, end):
 
 Quick Sort can be optimized from O(N) and O(N logN) to O(logN) using tail recursion.It reduces the complexity by solving smallest partition first which improves the time complexity of Quick Sort to O(log N).
 ### Code `C++`
-```
+```cpp
 void QuickSortOptimized(int arr[],int start,int end){
     while(start<end){
         int PartitionIndex = partition(arr,start,end);  //Getting the Partition index 
@@ -132,18 +132,17 @@ void QuickSortOptimized(int arr[],int start,int end){
 }
 
 int partition(int arr[], int start, int end) {
-		int PartitionIndex = start;
-		int PartitionValue = arr[end];
+	int PartitionIndex = start;
+	int PartitionValue = arr[end];
 
-		for (int i = start; i < end; i++) {
-			if (arr[i] <= PartitionValue) {
-				swap(arr, i, PartitionIndex++);
-			}
+	for (int i = start; i < end; i++) {
+		if (arr[i] <= PartitionValue) {
+			swap(arr, i, PartitionIndex++);
 		}
-		swap(arr, end, PartitionIndex);
-		return PartitionIndex;
 	}
-
+	swap(arr, end, PartitionIndex);
+	return PartitionIndex;
+}
 ```
 
 #### ⏲️ Time Complexities:
